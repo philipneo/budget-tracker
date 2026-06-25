@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <p class="eyebrow">Finance Tool</p>
+      <h1>Budget Tracker</h1>
+      <p>Log income and expenses, then review your balance and category totals.</p>
+    </header>
+
+    <section class="summary" id="summary"></section>
+
+    <form id="transactionForm" class="panel">
+      <input id="name" placeholder="Transaction name" required>
+      <input id="amount" type="number" step="0.01" placeholder="Amount" required>
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <select id="category">
+        <option>Work</option>
+        <option>Food</option>
+        <option>Transport</option>
+        <option>Bills</option>
+        <option>Fun</option>
+        <option>Other</option>
+      </select>
+      <button type="submit">Add Transaction</button>
+    </form>
+
+    <section class="columns">
+      <div>
+        <h2>Transactions</h2>
+        <div id="transactions" class="list"></div>
+      </div>
+      <div>
+        <h2>Categories</h2>
+        <div id="categories" class="list"></div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
