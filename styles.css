@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, system-ui, sans-serif; background: #f7f8fa; color: #18212f; }
+.app { width: min(1060px, calc(100% - 32px)); margin: 0 auto; padding: 40px 0; }
+.eyebrow { color: #0f766e; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+h1 { font-size: 42px; margin: 0 0 8px; }
+p { color: #64748b; }
+.summary, .columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 22px 0; }
+.card, .panel { background: white; border: 1px solid #dbe3ef; border-radius: 8px; padding: 16px; }
+.card strong { display: block; font-size: 28px; }
+.panel { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; }
+input, select, button { padding: 11px 12px; border-radius: 8px; border: 1px solid #cbd5e1; font: inherit; }
+button { background: #0f766e; color: white; border: 0; font-weight: 800; cursor: pointer; }
+.list { display: grid; gap: 10px; }
+.row { display: flex; justify-content: space-between; gap: 12px; background: white; border: 1px solid #dbe3ef; border-radius: 8px; padding: 12px; }
+.expense { color: #b91c1c; }
+.income { color: #047857; }
+@media (max-width: 760px) { .panel { grid-template-columns: 1fr; } }
